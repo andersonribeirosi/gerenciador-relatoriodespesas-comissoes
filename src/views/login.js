@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from '../components/card'
+import FormGroup from '../components/form-group'
 
 class Login extends React.Component {
     render() {
@@ -15,20 +16,18 @@ class Login extends React.Component {
                                         <div className="col-lg-12">
                                             <div className="bs-component">
                                                 <fieldset>
-                                                    <div className="form-group">
-                                                        <label for="inputEmail">Email</label>
+                                                    <FormGroup label="Email: *" htmlFor="inputEmail">
                                                         <input type="email"
                                                             id="inputEmail"
                                                             placeholder="Digite seu email"
                                                             className="form-control" />
-                                                    </div>
-                                                    <div className="form-group">
-                                                        <label for="inputSenha">Senha</label>
+                                                    </FormGroup>
+                                                    <FormGroup label="Senha: *" htmlFor="inputPassword">
                                                         <input type="password"
-                                                            id="inputSenha"
-                                                            placeholder="Digite sua senha"
+                                                            id="inputPassword"
+                                                            placeholder="Digite seu email"
                                                             className="form-control" />
-                                                    </div>
+                                                    </FormGroup>
                                                     <button type="button" className="btn btn-success mr-3 mt-3">Entrar</button>
                                                     <button type="button" className="btn btn-warning mt-3">Cadastrar</button>
                                                 </fieldset>
