@@ -16,8 +16,8 @@ class Login extends React.Component {
 
     render() {
         return (
-            <form>
-                <div className="container-fluid">
+            <form >
+                <div className="container-fluid mt-5">
                     <div className="form-group row">
                         <div className="col-md-6" style={{ position: 'relative', margin: 'auto' }}>
                             <div className="bs-docs-section">
@@ -60,4 +60,4 @@ class Login extends React.Component {
     }
 }
 
-export default Login;
+export default Login
