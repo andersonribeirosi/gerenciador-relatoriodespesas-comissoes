@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.title{
+  text-decoration: none;
+  color: #444;
+  transition: 300ms all;
+}
+
+.title:hover{
+  color: rgb(204, 33, 33) !important;
+  font-weight: bold;
+}
+
+.titlemenu {
+  margin-left: -100px;
+}
+
+
