@@ -23,8 +23,16 @@ code {
   font-weight: bold;
 }
 
-.titlemenu {
+/* .titlemenu {
   margin-left: -100px;
+} */
+
+.navbar-dark .navbar-toggler {
+  color: #fff;
+  margin-left: 5%;
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
-
+.campoObrigatorio{
+  font-size: 15px;
+}

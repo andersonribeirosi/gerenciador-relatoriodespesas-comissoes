@@ -1,10 +1,14 @@
 import React from 'react';
-import 'bootswatch/dist/flatly/bootstrap.css'
+
 import '../main/custom.css'
 import '../index.css'
-import Rotas from './rotas'
+import Routes from './routes'
 import NavBar from '../components/navbar'
 
+import 'bootswatch/dist/flatly/bootstrap.css'
+import 'jquery'
+import 'popper.js'
+import 'bootstrap'
 
 class App extends React.Component {
 
@@ -13,7 +17,7 @@ class App extends React.Component {
       <>
       <NavBar />
       <div className="container">
-        <Rotas />
+        <Routes />
       </div>
       </>
     );

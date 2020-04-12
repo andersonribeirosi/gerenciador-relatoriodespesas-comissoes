@@ -19,7 +19,7 @@ class RegisterUsuario extends React.Component {
     render() {
         return (
             <Card title="Cadastro de Usuário">
-                <p style={{ color: 'red' }}>Preencha os campos para cadastrar seu acesso</p>
+                <p className="campoObrigatorio" style={{ color: 'red' }}>Preencha todos os campos para cadastrar seu acesso</p>
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="bs-component">
@@ -56,9 +56,11 @@ class RegisterUsuario extends React.Component {
                                     placeholder="Repita a senha" />
                             </FormGroup>
                             <button type="button"
-                                className="btn btn-success mt-3"
+                                className="btn btn-success mr-3 mt-3"
                                 onClick={this.registerUsuario}>Salvar</button>
+                                 <button type="button" onClick={this.cancelar} className="btn btn-danger mt-3"><i className="pi pi-times"></i> Cancelar </button>
                         </div>
+
                     </div>
                 </div>
             </Card>

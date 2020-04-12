@@ -14,6 +14,10 @@ class Login extends React.Component {
         console.log('Senha: ' + this.state.password);
     }
 
+    cadastrar = () => {
+        this.props.history.push('/cadastro-usuario');
+    }
+
     render() {
         return (
             <form >
@@ -22,7 +26,7 @@ class Login extends React.Component {
                     <div className="col-md-6" style={{ position: 'relative', margin: 'auto' }}>
                         <div className="bs-docs-section">
                             <Card title="Login">
-                                <p className="mb-3" style={{ color: 'red' }}>Informe os dados de acesso</p>
+                                <p className="mb-3 campoObrigatorio" style={{ color: 'red' }}>Preencha os dados de acesso ou cadastre-se</p>
                                 <div className="form-group row">
                                     <div className="col-lg-12">
                                         <div className="bs-component">
@@ -44,7 +48,7 @@ class Login extends React.Component {
                                                         className="form-control" />
                                                 </FormGroup>
                                                 <button type="button" className="btn btn-success mr-3 mt-3" onClick={this.entrar}>Entrar</button>
-                                                <button type="button" className="btn btn-danger mt-3">Cadastrar</button>
+                                                <button type="button" className="btn btn-danger mt-3" onClick={this.cadastrar}>Cadastrar</button>
                                             </fieldset>
                                         </div>
                                     </div>
